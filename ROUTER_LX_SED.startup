@@ -1,0 +1,18 @@
+ip addr add dev eth0 10.0.0.145/29
+ip addr add dev eth1 10.0.0.153/29
+ip addr add dev eth2 192.168.0.2/29
+ip addr add dev eth3 10.0.0.209/28
+ip addr add dev eth4 10.0.0.129/30
+ip addr add dev eth5 10.0.0.141/30
+ip addr add dev eth6 192.168.1.1/24
+ip addr add dev eth7 10.0.0.1/30
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip link set dev eth2 up
+ip link set dev eth3 up
+ip link set dev eth4 up
+ip link set dev eth5 up
+ip link set dev eth6 up
+ip link set dev eth7 up
+/etc/init.d/zebra start
+/etc/init.d/dhcp3-server start
